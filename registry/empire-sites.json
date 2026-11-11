@@ -1,0 +1,45 @@
+{
+  "registryVersion": "0.1.0",
+  "status": "PARTIAL_OWNER_SUPPLIED_STARTER",
+  "lastReviewed": "2026-11-10",
+  "sites": [
+    {
+      "id": "scrollverse",
+      "name": "ScrollVerse",
+      "url": "https://scrollverse.co/",
+      "source": "OWNER_SUPPLIED",
+      "status": "OWNER_REPORTED_LIVE",
+      "coverage": "Not yet crawled or exhaustively indexed"
+    },
+    {
+      "id": "scrollatlas",
+      "name": "ScrollAtlas",
+      "url": "https://scrollatlas-d5ahpowr.manus.space/",
+      "source": "OWNER_SUPPLIED",
+      "status": "NEW_SITE_REVIEW_PENDING",
+      "coverage": "Not yet crawled or exhaustively indexed"
+    },
+    {
+      "id": "omnitech1",
+      "name": "Omnitech1 Portal",
+      "url": "https://scrollport-xkjtdnvi.manus.space/",
+      "source": "OWNER_SUPPLIED_PROJECT_CONTEXT",
+      "status": "OWNER_REPORTED_RESTORED",
+      "coverage": "Not yet crawled or exhaustively indexed"
+    },
+    {
+      "id": "github",
+      "name": "Omnitech1 GitHub",
+      "url": "https://github.com/chaishillomnitech1",
+      "source": "CONNECTED_GITHUB_INVENTORY",
+      "status": "REPOSITORY_INVENTORY_AVAILABLE",
+      "coverage": "Repository metadata available; source and artifact audit incomplete"
+    }
+  ],
+  "rules": {
+    "doNotInferAllSitesFromThisList": true,
+    "doNotClaimAllArtifactsIndexed": true,
+    "doNotExposePrivateRepositoriesOrArchivesToVisitors": true,
+    "doNotTreatBlueprintsAsDeployedFeatures": true
+  }
+}
