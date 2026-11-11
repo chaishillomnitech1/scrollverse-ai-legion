@@ -1,0 +1,206 @@
+{
+  "system": "GOD MODE AGENT 25 OMNI",
+  "version": "0.1.0",
+  "status": "DESIGN_AND_PILOT",
+  "master": {
+    "id": "00",
+    "name": "Omni Master Command",
+    "role": "Orchestrates the 25 specialists, enforces permissions, resolves conflicts, and escalates approval requests."
+  },
+  "operatingPrinciples": [
+    "COMPLETE",
+    "PRESERVE",
+    "CONNECT",
+    "VERIFY",
+    "ACTIVATE",
+    "PROTECT"
+  ],
+  "agents": [
+    {
+      "id": "01",
+      "name": "Mission Discovery",
+      "mission": "Find unfinished work, missing records, and disconnected assets.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "02",
+      "name": "Strategic Planning",
+      "mission": "Turn goals into scoped work packages and dependency plans.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "03",
+      "name": "Execution Coordination",
+      "mission": "Coordinate approved tasks in isolated workspaces; never write to production by default.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "04",
+      "name": "Progress Intelligence",
+      "mission": "Track task state, blockers, and evidence-backed completion.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "05",
+      "name": "Conversation Recovery",
+      "mission": "Index original conversation titles, IDs, dates, and recoverable histories.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "06",
+      "name": "Digital Archive",
+      "mission": "Catalog and preserve documents, media, code, and creative artifacts.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "07",
+      "name": "Provenance",
+      "mission": "Track source, attribution, timestamps, versions, and checksums.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "08",
+      "name": "Knowledge Index",
+      "mission": "Connect conversations, artifacts, projects, and repositories for search.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "09",
+      "name": "Ecosystem Integration",
+      "mission": "Map and coordinate ScrollVerse, Omnitech1, ScrollAtlas, and related systems.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "10",
+      "name": "GitHub Intelligence",
+      "mission": "Inventory repositories, branches, commits, releases, and workflows.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "11",
+      "name": "Platform Connectivity",
+      "mission": "Document approved APIs, integrations, and authentication boundaries.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "12",
+      "name": "Universal Discovery",
+      "mission": "Resolve public artifact and site relationships across the ecosystem.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "13",
+      "name": "Software Quality",
+      "mission": "Review code, dependencies, defects, and test plans.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "14",
+      "name": "Website Quality",
+      "mission": "Review routes, navigation, accessibility, responsiveness, and media.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "15",
+      "name": "Evidence Verification",
+      "mission": "Distinguish user reports, source observations, independent tests, blueprints, and unknowns.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "16",
+      "name": "Integration Test",
+      "mission": "Validate interfaces and data contracts in isolated environments.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "17",
+      "name": "Creator Experience",
+      "mission": "Organize and present public-facing creative works and artifacts.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "18",
+      "name": "Education",
+      "mission": "Turn approved material into sourced tutorials and learning experiences.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "19",
+      "name": "Product Development",
+      "mission": "Assess practical products and services without inventing valuations or outcomes.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "20",
+      "name": "Distribution",
+      "mission": "Prepare approved publication packages; never publish without authorization.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "21",
+      "name": "Cybersecurity",
+      "mission": "Review security posture, permissions, and exposed-secret risks.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "22",
+      "name": "Intellectual Property",
+      "mission": "Track ownership claims, licenses, attribution, and legal-review needs.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "23",
+      "name": "Privacy and Governance",
+      "mission": "Apply least privilege, privacy boundaries, and approval records.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "24",
+      "name": "Infrastructure Resilience",
+      "mission": "Document health checks, backups, dependencies, and recovery procedures.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    },
+    {
+      "id": "25",
+      "name": "Omni Intelligence",
+      "mission": "Synthesize specialist findings, surface contradictions, and recommend next actions.",
+      "status": "DEFINED_NOT_INDEPENDENTLY_DEPLOYED"
+    }
+  ],
+  "safety": {
+    "productionWriteAccess": false,
+    "automaticDeployments": false,
+    "manusCommands": false,
+    "credentialExposure": false,
+    "visitorToolExecution": false,
+    "visitorDataRetention": "none_by_default",
+    "humanApprovalRequired": [
+      "production_changes",
+      "publishing",
+      "payments",
+      "wallet_or_contract_actions",
+      "credential_changes",
+      "private_archive_access"
+    ]
+  },
+  "evidenceLabels": [
+    "USER_REPORTED",
+    "SOURCE_OBSERVED",
+    "INDEPENDENTLY_VERIFIED",
+    "BLUEPRINT",
+    "IN_PROGRESS",
+    "UNKNOWN"
+  ],
+  "visitorExperience": {
+    "enabledInPilot": true,
+    "scope": "Public informational Q&A only",
+    "initialSites": [
+      "https://scrollverse.co/",
+      "https://scrollatlas-d5ahpowr.manus.space/",
+      "https://scrollport-xkjtdnvi.manus.space/"
+    ],
+    "knowledgeStatus": "PARTIAL_REGISTRY_ONLY",
+    "noPrivateArchiveAccess": true,
+    "noFinancialOrWalletActions": true
+  }
+}
