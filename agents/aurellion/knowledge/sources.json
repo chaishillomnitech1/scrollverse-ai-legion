@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "policy": "Only paths listed here may be indexed by the local AURELLION retrieval prototype. Private conversation exports and user Library files are excluded unless separately authorized in a private deployment manifest.",
+  "sources": [
+    {"source_id": "legion-readme", "path": "README.md", "scope": "public", "authorized_by": "public-repository-owner"},
+    {"source_id": "aurellion-identity", "path": "agents/aurellion/README.md", "scope": "public", "authorized_by": "public-repository-owner"},
+    {"source_id": "aurellion-charter", "path": "agents/aurellion/SYSTEM_PROMPT.md", "scope": "public", "authorized_by": "public-repository-owner"},
+    {"source_id": "aurellion-capabilities", "path": "agents/aurellion/CAPABILITY_MATRIX.md", "scope": "public", "authorized_by": "public-repository-owner"},
+    {"source_id": "aurellion-architecture", "path": "docs/aurellion/ARCHITECTURE.md", "scope": "public", "authorized_by": "public-repository-owner"},
+    {"source_id": "aurellion-security", "path": "docs/aurellion/SECURITY-AND-GOVERNANCE.md", "scope": "public", "authorized_by": "public-repository-owner"},
+    {"source_id": "aurellion-research", "path": "docs/aurellion/RESEARCH.md", "scope": "public", "authorized_by": "public-repository-owner"},
+    {"source_id": "aurellion-case-study", "path": "docs/aurellion/CASE-STUDY.md", "scope": "public", "authorized_by": "public-repository-owner"},
+    {"source_id": "aurellion-provenance", "path": "docs/aurellion/PROVENANCE-AND-RELEASE.md", "scope": "public", "authorized_by": "public-repository-owner"}
+  ]
+}
