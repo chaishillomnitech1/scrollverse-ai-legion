@@ -71,6 +71,20 @@ No repository is merged, moved, centralized, or made a dependency merely by bein
 - Independent security review, privacy review, accessibility review, disaster recovery exercise, and human sign-off.
 - Deployment is a separate authorization and must have a release receipt.
 
+
+### Stage C — Agent 25 staging configuration already selected
+
+Carry forward the previously selected staging choices without changing production:
+- Hosting target: Vercel for the isolated Agent 25 staging environment only.
+- AI provider: OpenAI.
+- Store provider key, selected model, provider endpoint, and production hostname allowlist in the hosting secret manager; never commit values to Git.
+- Enforce shared rate limiting across instances and validate trusted-proxy configuration before trusting forwarded client IP headers.
+- Enforce strict CORS and origin restrictions; allow only approved embed origins and the exact staging hostnames.
+- Test the visitor experience in isolated staging with synthetic or minimized data.
+- Production activation remains disabled.
+
+The endpoint, model identifier, exact hostname allowlist, approved embed origins, and secret values were not present in the reviewed project context. Keep these as configuration prerequisites rather than inventing them. This staging choice does not make Vercel a dependency of OMNITECH1's independent core architecture.
+
 ## 5. Model adapter contract
 
 ```text
