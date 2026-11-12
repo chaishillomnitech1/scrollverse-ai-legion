@@ -44,6 +44,7 @@ See [the case study](CASE-STUDY.md) for the evidence boundary.
 - [Live repository catalog snapshot](REPOSITORY-CATALOG.json)
 - [Public GitHub visitor guide](../../agents/aurellion/visitor/README.md)
 - [Explicit public retrieval source manifest](../../agents/aurellion/knowledge/sources.json)
+- [Public GitHub source allowlist](../../agents/aurellion/knowledge/github-public-allowlist.json)
 - [GitHub Copilot custom agent](../../.github/agents/aurellion-github-guide.agent.md)
 
 ## Reusable GitHub Copilot skills
