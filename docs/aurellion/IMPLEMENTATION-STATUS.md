@@ -18,11 +18,11 @@ The merge commit and Actions run were read from connected GitHub records on 2026
 ## Six engineering stages
 | Stage | Current implementation branch | Remaining gate |
 |---|---|---|
-| 1. Replaceable model-provider adapter | Provider-neutral Responses API and Chat Completions adapters implemented | CI, secret-manager configuration, authorized staging call |
-| 2. Source-aware retrieval | Explicit manifest and local lexical retrieval implemented | Source manifest review, connector adapters, retrieval/citation quality tests |
-| 3. Controlled memory/provenance | Consent-gated SQLite memory, retention, deletion events implemented | Privacy review, encrypted host storage, consent UI, restore/delete tests |
-| 4. Authenticated Agent 25 communication | HMAC envelope, per-peer key lookup, timestamp/nonce replay guard implemented | Peer identity/key provisioning, TLS transport, schema registration, revocation/integration tests |
-| 5. Adversarial evaluations | Provider, retrieval, memory, federation and staging tests added | CI result, expanded red-team corpus, human security review |
+| 1. Replaceable model-provider adapter | Provider-neutral Responses API and Chat Completions adapters implemented | CI passed in PR #5; secret-manager configuration and authorized staging call remain |
+| 2. Source-aware retrieval | Explicit manifest and local lexical retrieval implemented | Public manifest and citation tests pass; connector adapters and retrieval quality evaluation remain |
+| 3. Controlled memory/provenance | Consent-gated SQLite memory, retention, deletion events implemented | Unit tests pass; privacy review, encrypted host storage, consent UI, restore/delete verification remain |
+| 4. Authenticated Agent 25 communication | HMAC envelope, per-peer key lookup, timestamp/nonce replay guard implemented | Envelope/replay tests pass; peer identity/key provisioning, TLS transport, schema registration, revocation/integration tests remain |
+| 5. Adversarial evaluations | Provider, retrieval, memory, federation and staging tests added | 18 foundation tests pass; expanded red-team corpus and human security review remain |
 | 6. Isolated staging | Fail-closed configuration validator implemented | Exact host/model/origins, secret manager, Redis, verified proxy hops, tests and explicit staging deployment approval |
 
 ## Visitor navigation
