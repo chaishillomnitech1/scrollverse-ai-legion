@@ -13,7 +13,7 @@ Canonical spelling: AURELLION
 - Job: python-foundation-tests
 - Result: completed / success.
 
-The merge commit and Actions run were read from connected GitHub records on 2026-11-12. This establishes that the included unit-test job passed; it does not establish a live model service or deployed visitor assistant.
+The merge commit and Actions run were read from connected GitHub records on 2026-11-12. This establishes that the included unit-test job passed; it does not establish a live model service or deployed visitor assistant.\n\n## Follow-on implementation PR\n- PR #5: open draft, not merged.\n- Latest verified head at this snapshot: 5cb3610b35010935fe5b489c034d6281af14662c.\n- Latest observed workflow run: 43218880230, completed successfully.\n- Job: python-foundation-tests; compileall passed; all 26 tests passed.\n- The follow-on PR remains reviewable and no staging or production deployment has occurred.
 
 ## Six engineering stages
 | Stage | Current implementation branch | Remaining gate |
@@ -22,7 +22,7 @@ The merge commit and Actions run were read from connected GitHub records on 2026
 | 2. Source-aware retrieval | Explicit manifest, local lexical retrieval, and read-only GitHub Contents adapter implemented; public allowlist covers 95 repositories | Read-only GitHub App/token provisioning, connector configuration, source freshness, and retrieval quality evaluation remain |
 | 3. Controlled memory/provenance | Consent-gated SQLite memory, retention, deletion events implemented | Unit tests pass; privacy review, encrypted host storage, consent UI, restore/delete verification remain |
 | 4. Authenticated Agent 25 communication | HMAC envelope, per-peer key lookup, timestamp/nonce replay guard implemented | Envelope/replay tests pass; peer identity/key provisioning, TLS transport, schema registration, revocation/integration tests remain |
-| 5. Adversarial evaluations | Provider, retrieval, memory, federation and staging tests added | 18 foundation tests pass; expanded red-team corpus and human security review remain |
+| 5. Adversarial evaluations | Provider, retrieval, memory, federation and staging tests added | 26 foundation tests pass; expanded red-team corpus and human security review remain |
 | 6. Isolated staging | Fail-closed configuration validator, shared Redis sliding-window limiter, and exact HTTPS origin policy implemented | Secret-manager values, Redis provisioning, verified proxy hops, backend wiring, tests and explicit isolated staging deployment approval |
 
 ## Visitor navigation
