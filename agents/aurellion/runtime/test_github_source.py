@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from github_source import GitHubReadOnlyAdapter, GitHubSourceError
+from github_source import GitHubReadOnlyAdapter, GitHubSourceError, load_public_allowlist
 
 
 class FakeResponse:
@@ -45,6 +45,23 @@ class GitHubReadOnlyAdapterTests(unittest.TestCase):
         self.assertEqual(result.git_blob_sha, "git-blob-sha")
         self.assertEqual(result.scope, "public")
         self.assertEqual(len(result.raw_sha256), 64)
+
+
+    def test_public_allowlist_loader_excludes_private_entries(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "allowlist.json"
+            path.write_text(json.dumps({
+                "schema_version": 1, "scope": "public-only",
+                "repositories": [
+                    {"full_name": "owner/public", "default_branch": "main", "scope": "public",
+                     "refs": ["main"], "paths": ["README.md"]},
+                    {"full_name": "owner/private", "default_branch": "main", "scope": "project-private",
+                     "refs": ["main"], "paths": ["README.md"]},
+                ],
+            }), encoding="utf-8")
+            result = load_public_allowlist(str(path))
+            self.assertIn("owner/public", result)
+            self.assertNotIn("owner/private", result)
 
     def test_unlisted_repository_and_path_are_denied(self):
         adapter = self.adapter()
