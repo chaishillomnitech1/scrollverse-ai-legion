@@ -118,3 +118,10 @@ The next implementation branch adds the following provider-neutral primitives:
 - Adversarial tests: provider allowlist, retrieval scope/path traversal, memory consent/deletion/secret rejection, message authentication/replay/tampering, and staging fail-closed behavior.
 
 These modules are implemented on the follow-on feature branch. Their GitHub Actions result is pending until the pull request workflow completes. No provider credentials, Agent 25 peer key, network endpoint, or hosting environment has been connected.
+
+
+### GitHub source adapter
+
+The follow-on runtime also includes a read-only GitHub Contents API adapter. It accepts a host-injected token, restricts requests to an explicit repository/ref/path allowlist, fetches only individual file contents, and returns the Git blob SHA separately from the raw-file SHA-256. The public visitor allowlist is a snapshot of 95 public repositories; the one private repository returned by the connected owner inventory is excluded. The current default path prefixes are README.md, docs, agents, and .github. This is a navigation/source adapter, not a bulk mirror of every repository or a claim that all files have been indexed.
+
+For private owner knowledge, use a separate private deployment manifest and credentials with read-only scopes. Never place private repository names, private conversation exports, or secrets in the public catalog.
