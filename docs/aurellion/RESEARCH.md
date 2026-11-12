@@ -52,3 +52,13 @@
 ## Limits
 
 These sources do not establish AURELLION trademark availability, copyright ownership of every artifact, compliance in every jurisdiction, security certification, commercial demand, or any token's value. Those require professional review and project-specific evidence.
+
+
+## OpenAI model API integration
+
+For new OpenAI integrations, use the Responses API rather than starting new work on the legacy Assistants API. The official migration guide states that the Assistants API was sunset on August 26, 2026 and directs new integrations to Responses. AURELLION's adapter therefore defaults to the explicit Responses API style; Chat Completions remains an opt-in compatibility mode for providers that expose that contract.
+
+- OpenAI API overview and Responses quickstart: https://platform.openai.com/overview
+- Assistants migration guide: https://platform.openai.com/playground/assistants
+
+AURELLION sends application-managed message history as Responses input and sets store=false. The provider adapter remains replaceable; this does not connect a provider or authorize live requests.
