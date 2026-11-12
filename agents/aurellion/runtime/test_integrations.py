@@ -159,6 +159,8 @@ class StagingGateTests(unittest.TestCase):
             "AURELLION_ALLOWED_PROVIDER_HOSTS": "api.openai.com",
             "AURELLION_ALLOWED_ORIGINS": "https://staging.scrollverse.co",
             "REDIS_URL": "rediss://redis.example.test:6379",
+            "RATE_LIMIT_ENABLED": "true",
+            "AURELLION_RATE_LIMIT_PEPPER": "r" * 40,
             "TRUSTED_PROXY_HOPS": "1",
             "AGENT25_PEER_ID": "agent25-staging",
             "AGENT25_SHARED_SECRET": "s" * 40,
