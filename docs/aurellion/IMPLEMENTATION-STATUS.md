@@ -18,7 +18,7 @@ The merge commit and Actions run were read from connected GitHub records on 2026
 ## Six engineering stages
 | Stage | Current implementation branch | Remaining gate |
 |---|---|---|
-| 1. Replaceable model-provider adapter | Provider-neutral OpenAI-compatible adapter implemented | CI, secret-manager configuration, authorized staging call |
+| 1. Replaceable model-provider adapter | Provider-neutral Responses API and Chat Completions adapters implemented | CI, secret-manager configuration, authorized staging call |
 | 2. Source-aware retrieval | Explicit manifest and local lexical retrieval implemented | Source manifest review, connector adapters, retrieval/citation quality tests |
 | 3. Controlled memory/provenance | Consent-gated SQLite memory, retention, deletion events implemented | Privacy review, encrypted host storage, consent UI, restore/delete tests |
 | 4. Authenticated Agent 25 communication | HMAC envelope, per-peer key lookup, timestamp/nonce replay guard implemented | Peer identity/key provisioning, TLS transport, schema registration, revocation/integration tests |
