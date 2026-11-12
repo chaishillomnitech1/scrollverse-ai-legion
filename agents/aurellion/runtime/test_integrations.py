@@ -153,7 +153,8 @@ class StagingGateTests(unittest.TestCase):
         env = {
             "AURELLION_PROVIDER": "openai",
             "AURELLION_MODEL": "configured-model",
-            "AURELLION_API_BASE_URL": "https://api.openai.com/v1/chat/completions",
+            "AURELLION_API_BASE_URL": "https://api.openai.com/v1/responses",
+            "AURELLION_API_STYLE": "responses",
             "AURELLION_API_KEY": "secret-is-present-not-printed",
             "AURELLION_ALLOWED_PROVIDER_HOSTS": "api.openai.com",
             "AURELLION_ALLOWED_ORIGINS": "https://staging.scrollverse.co",
