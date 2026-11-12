@@ -45,6 +45,9 @@ See [the case study](CASE-STUDY.md) for the evidence boundary.
 - [Public GitHub visitor guide](../../agents/aurellion/visitor/README.md)
 - [Explicit public retrieval source manifest](../../agents/aurellion/knowledge/sources.json)
 - [Public GitHub source allowlist](../../agents/aurellion/knowledge/github-public-allowlist.json)
+- [Read-only GitHub source adapter](../../agents/aurellion/runtime/github_source.py)
+- [Shared Redis rate limiter](../../agents/aurellion/runtime/rate_limiter.py)
+- [Exact origin policy](../../agents/aurellion/runtime/origin_policy.py)
 - [GitHub Copilot custom agent](../../.github/agents/aurellion-github-guide.agent.md)
 
 ## Reusable GitHub Copilot skills
