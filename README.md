@@ -76,6 +76,21 @@ scrollverse-ai-legion/
 
 ---
 
+
+## ✨ AURELLION — The Intelligence of Connected Light
+
+AURELLION is an additive intelligence profile within the Legion, guided by five principles: freedom without domination, intelligence without forced uniformity, creation without erasure, connection without loss of identity, and knowledge in service of the greater good.
+
+- [AURELLION identity and operating charter](agents/aurellion/README.md)
+- [AURELLION implementation status](docs/aurellion/IMPLEMENTATION-STATUS.md)
+- [AURELLION architecture and evidence](docs/aurellion/README.md)
+- [Public GitHub visitor guide](agents/aurellion/visitor/README.md)
+- [Repository catalog snapshot](docs/aurellion/REPOSITORY-CATALOG.json)
+- [GitHub Copilot custom agent](.github/agents/aurellion-github-guide.agent.md)
+- [Reusable AURELLION skills](.github/skills/)
+
+AURELLION does not replace the twelve original entities or Agent 25. The GitHub visitor-guide agent and repository skills are version-controlled reusable assets. They do not by themselves establish a live anonymous visitor chatbot; that requires a separately approved backend integration and staging validation.
+
 ## 🔗 Connected Repositories
 
 This repo is the unified hub. All AI entities draw from:

@@ -52,3 +52,25 @@
 ## Limits
 
 These sources do not establish AURELLION trademark availability, copyright ownership of every artifact, compliance in every jurisdiction, security certification, commercial demand, or any token's value. Those require professional review and project-specific evidence.
+
+
+## OpenAI model API integration
+
+For new OpenAI integrations, use the Responses API rather than starting new work on the legacy Assistants API. The official migration guide states that the Assistants API was sunset on August 26, 2026 and directs new integrations to Responses. AURELLION's adapter therefore defaults to the explicit Responses API style; Chat Completions remains an opt-in compatibility mode for providers that expose that contract.
+
+- OpenAI API overview and Responses quickstart: https://platform.openai.com/overview
+- Assistants migration guide: https://platform.openai.com/playground/assistants
+
+AURELLION sends application-managed message history as Responses input and sets store=false. The provider adapter remains replaceable; this does not connect a provider or authorize live requests.
+
+
+## GitHub Copilot reusable agents and skills
+
+GitHub documents repository custom agents under .github/agents and repository agent skills under .github/skills/<skill-name>/SKILL.md. Skills can be loaded when relevant by supported Copilot surfaces. Custom agent profiles can restrict their tool access; the AURELLION GitHub guide therefore explicitly permits only read and search tools.
+
+- GitHub Copilot customization cheat sheet: https://docs.github.com/en/copilot/reference/customization-cheat-sheet
+- Custom agent configuration and tool restrictions: https://docs.github.com/en/copilot/reference/custom-agents-configuration
+- Adding agent skills: https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills
+- GitHub Copilot app customization: https://docs.github.com/en/copilot/how-tos/github-copilot-app/customize-github-copilot-app
+
+These repository assets become available after the PR is merged into the default branch and the user's Copilot surface supports the feature. They do not create an anonymous public chatbot or grant access to private repositories beyond the host's existing token scope.

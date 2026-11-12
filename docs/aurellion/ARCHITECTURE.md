@@ -104,3 +104,32 @@ Never bind project identity to one model provider. Provider selection must be co
 ## 6. Evidence states
 
 Use separate labels: DOCUMENTED, IMPLEMENTED, TESTED, VERIFIED, STAGED, DEPLOYED, ACTIVE. A branch commit establishes a repository artifact, not a running AI. A successful CI job establishes only the checks actually run. A preview is not production.
+
+
+## 7. Implemented runtime modules — follow-on foundation
+
+The next implementation branch adds the following provider-neutral primitives:
+
+- Model adapter: configurable OpenAI-compatible endpoint/model, exact hostname allowlist, HTTPS enforcement, bounded request size/temperature/token settings, sanitized errors, and no credential persistence.
+- Source retrieval: explicit source manifest, public/private/session scope labels, local allowlist, path traversal protection, file-size/type restrictions, content hashes, lexical ranking, and line-level citations.
+- Controlled memory: explicit consent for durable writes, ordinary project knowledge only, namespace separation, retention expiry, explicit deletion event, and provenance metadata.
+- Agent 25 federation: canonical HMAC-authenticated envelopes, per-peer key lookup, recipient/type/time/size validation, persistent nonce replay guard, and TLS-required transport boundary.
+- Staging gate: validates required provider, origin, Redis TLS, trusted-proxy and peer configuration without deploying or printing secret values.
+- Adversarial tests: provider allowlist, retrieval scope/path traversal, memory consent/deletion/secret rejection, message authentication/replay/tampering, and staging fail-closed behavior.
+
+These modules are implemented on the follow-on feature branch. Their GitHub Actions result is pending until the pull request workflow completes. No provider credentials, Agent 25 peer key, network endpoint, or hosting environment has been connected.
+
+
+### GitHub source adapter
+
+The follow-on runtime also includes a read-only GitHub Contents API adapter. It accepts a host-injected token, restricts requests to an explicit repository/ref/path allowlist, fetches only individual file contents, and returns the Git blob SHA separately from the raw-file SHA-256. The public visitor allowlist is a snapshot of 95 public repositories; the one private repository returned by the connected owner inventory is excluded. The current default path prefixes are README.md, docs, agents, and .github. This is a navigation/source adapter, not a bulk mirror of every repository or a claim that all files have been indexed.
+
+For private owner knowledge, use a separate private deployment manifest and credentials with read-only scopes. Never place private repository names, private conversation exports, or secrets in the public catalog.
+
+
+### Shared visitor edge controls
+
+- Shared rate limiting is implemented as an atomic Redis sliding-window limiter. It hashes visitor identifiers with a secret pepper before creating Redis keys.
+- Exact HTTPS origin matching is implemented as a reusable origin policy. Wildcards, credential-bearing origins, non-HTTPS origins, paths, queries, and fragments are rejected.
+- Staging validation requires a TLS Redis URL, explicit rate-limit enablement, a secret pepper, exact origins, and an observed trusted-proxy hop count.
+- The host application must still wire these controls into the visitor request path and configure Redis securely. Unit tests do not establish a deployed Redis service or runtime enforcement.

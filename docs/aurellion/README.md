@@ -36,3 +36,30 @@ The minimal Python foundation is in [agents/aurellion/runtime](../../agents/aure
 - NFT / coin: NOT CREATED OR MINTED.
 
 See [the case study](CASE-STUDY.md) for the evidence boundary.
+
+
+## Runtime implementation and visitor intelligence
+
+- [Implementation status](IMPLEMENTATION-STATUS.md)
+- [Live repository catalog snapshot](REPOSITORY-CATALOG.json)
+- [Public GitHub visitor guide](../../agents/aurellion/visitor/README.md)
+- [Explicit public retrieval source manifest](../../agents/aurellion/knowledge/sources.json)
+- [Public GitHub source allowlist](../../agents/aurellion/knowledge/github-public-allowlist.json)
+- [Read-only GitHub source adapter](../../agents/aurellion/runtime/github_source.py)
+- [Shared Redis rate limiter](../../agents/aurellion/runtime/rate_limiter.py)
+- [Exact origin policy](../../agents/aurellion/runtime/origin_policy.py)
+- [GitHub Copilot custom agent](../../.github/agents/aurellion-github-guide.agent.md)
+
+## Reusable GitHub Copilot skills
+
+Project skills are stored under .github/skills and are available to supported Copilot surfaces when their repository skill support is enabled:
+
+- aurellion-provider-adapter
+- aurellion-authorized-source-retrieval
+- aurellion-controlled-memory-provenance
+- aurellion-agent25-federation
+- aurellion-adversarial-evaluation
+- aurellion-staging-readiness
+- aurellion-github-visitor-navigation
+
+These are version-controlled repository skills, not a global installation into every ChatGPT or AI environment.

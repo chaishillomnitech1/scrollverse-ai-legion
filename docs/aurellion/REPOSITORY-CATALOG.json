@@ -1,0 +1,582 @@
+{
+  "snapshot_date": "2026-11-12",
+  "source": "GitHub connected repository inventory, owner scope chaishillomnitech1",
+  "evidence": "SOURCE_VERIFIED public repository metadata only. Private repositories are excluded from this public catalog.",
+  "total_public_repositories": 95,
+  "private_repositories_excluded": 1,
+  "archived_public_repositories": 0,
+  "public_code_search_indexed": 93,
+  "public_code_search_not_indexed": 2,
+  "repositories": [
+    {
+      "full_name": "chaishillomnitech1/Chaishillomnitech1",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/introduction-to-github",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/Expansion-",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/nextjs-boilerplate",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/skills-hello-github-actions",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/nextjs-commerce",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse_commerce",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/chais-hill-portfolio",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": false
+    },
+    {
+      "full_name": "chaishillomnitech1/Infinite-Nexus-ScrollVerse",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/ChaisTheGreatApp-GodMode",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/ps-email-airdrop",
+      "default_branch": "master",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/OmniBuilderZero",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/cosmic-constitution-scrollverse",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/ScrollVerse_Sovereign_Archive",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/obscure-potato",
+      "default_branch": "activate-sst-tokenomics",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-timeline-nullifier-omniimpact",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/AkashicApp",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/Pantheon-Protocol-TGLD-Smart-Contracts",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/Sovereign-Legal-Frameworks",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/omniversal-kernel",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/vibranium-sovereignty-protocol",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/eternal-scrollverse",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-empires",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/Akashic-ip-protection-",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/sovereign-anchor-fortification",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-lynx-lifecycle",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-omni-fleet-manifesto.",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-omni-fleet-manifesto",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollsoul-unity-support-",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/omnitech1-portal",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-expansion-hub",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/ScrollSoul-InfiniteVault",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/Quantum-Eternal-Archive",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollsoul-nft-core",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/Galactic-Frequency-Broadcaster-",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/legion-certification-portal",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/-Quantum-Financial-System-QFS-",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollsoul-music-sync",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/flamecoin-v4",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/ScrollSoul-Omniversal-Harmonics",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/supreme-sovereign-infinity",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/londyn-legacy-protocol",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/MailchimpLegacyProtocol",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/lyrian-lion-codes",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/context-hub-skills",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/AkashicLogs-NFTMetaFramework",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/QFS-Nexus-DistroKid-Mirror-DAO",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-trinity",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/desktop-tutorial",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-portal",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-trinity-portal",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-web-app",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-dashboard",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-repo-1",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/ScrollSoul-JS-QFS",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/VinelandEternal",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/marsomni",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/voltron-omni-hq",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-trinity-sovereign",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": false
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-sovereign-portal",
+      "default_branch": "master",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/grcp-scrollsoul-expansion",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/Unified-ScrollVerse-Eternal",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-ai-legion",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/sovereign-codex",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-first-knight-covenant",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/OmniMind-OSS",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-platform",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-eternal-sovereign-archive",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/mein-sigil-mint-scroll-zkevm",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/XLVIIIblocks",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/Google-immutable-proof",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-evidence-archive-private",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-story-studio",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-omni-manifesto",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/omega-continuum-blueprints",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-continuity-vault",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/digital-brotherhood-covenant",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/hall-of-fame-shrine-008-thothibis-transmission-master",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollsoul-music-sync-complete-automation",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/sovereign-architecture-certificate-ledger",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/infininillionaire-film-foundation-phase-66-omega",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-master-ecosystem-hub",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-omniversal-manifesto",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-osos-genesis-omniversal-archive",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-transmission-archive",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/chais-computing-omniversal-manifesto",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/kingchaisgpt-apex-v1-0-blueprint",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-new-dominion",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/consciousness-connection-evolution",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/ChaisHill---XLVIII-BLOCKS-",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-treasury-verification",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/scrollverse-governance-portal",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/manus-first-knight-codex",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/manus-first-knight-genesis-sealed",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    },
+    {
+      "full_name": "chaishillomnitech1/infinity-72-archive",
+      "default_branch": "main",
+      "archived": false,
+      "code_search_indexed": true
+    }
+  ]
+}
