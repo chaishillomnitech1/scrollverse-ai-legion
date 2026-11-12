@@ -1,0 +1,36 @@
+name: AURELLION Foundation Checks
+
+on:
+  pull_request:
+    paths:
+      - "agents/aurellion/**"
+      - "docs/aurellion/**"
+      - ".github/workflows/aurellion-foundation.yml"
+  push:
+    branches:
+      - "feat/aurellion-connected-light-foundation-2026-11-12"
+    paths:
+      - "agents/aurellion/**"
+      - "docs/aurellion/**"
+      - ".github/workflows/aurellion-foundation.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aurellion-foundation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python-foundation-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run foundation tests
+        working-directory: agents/aurellion/runtime
+        run: python -m unittest -v
