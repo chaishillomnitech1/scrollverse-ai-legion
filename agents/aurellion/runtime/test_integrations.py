@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 from agent25_protocol import FederationAuthError, ReplayGuard, create_envelope, verify_envelope
 from memory_store import ControlledMemory, MemoryPolicyError
-from provider import OpenAICompatibleProvider, ProviderConfig, ProviderConfigurationError
+from provider import OpenAICompatibleProvider, OpenAIResponsesProvider, ProviderConfig, ProviderConfigurationError
 from retrieval import SourceAccessError, SourceRecord, SourceRegistry
 from staging_gate import validate_staging_environment
 from aurellion_core import ProvenanceLedger
@@ -26,13 +26,33 @@ class FakeResponse:
 class ProviderTests(unittest.TestCase):
     def config(self):
         return ProviderConfig("openai-compatible", "https://api.example.test/v1/chat/completions",
-                              "model-test", "not-a-real-key", ("api.example.test",))
+                              "model-test", "not-a-real-key", ("api.example.test",), api_style="chat_completions")
 
     def test_endpoint_must_match_exact_allowlist(self):
         bad = ProviderConfig("openai", "https://evil.example/v1/chat/completions",
                              "model-test", "x", ("api.example.test",))
         with self.assertRaises(ProviderConfigurationError):
             bad.validate()
+
+
+    def test_openai_responses_adapter_uses_responses_shape_and_store_false(self):
+        config = ProviderConfig(
+            "openai", "https://api.openai.com/v1/responses", "model-test",
+            "not-a-real-key", ("api.openai.com",), api_style="responses",
+        )
+        provider = OpenAIResponsesProvider(config)
+        payload = {
+            "id": "resp-1", "model": "model-test", "status": "completed",
+            "output": [{"type": "message", "content": [{"type": "output_text", "text": "connected light"}]}],
+            "usage": {"input_tokens": 2, "output_tokens": 2},
+        }
+        with patch("provider.urlopen", return_value=FakeResponse(payload)) as mocked:
+            result = provider.generate([{"role": "user", "content": "hello"}])
+        request = mocked.call_args.args[0]
+        sent = json.loads(request.data.decode("utf-8"))
+        self.assertEqual(result.response, "connected light")
+        self.assertFalse(sent["store"])
+        self.assertEqual(sent["max_output_tokens"], 1200)
 
     def test_adapter_parses_compatible_response(self):
         provider = OpenAICompatibleProvider(self.config())
