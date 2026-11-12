@@ -19,7 +19,7 @@ The merge commit and Actions run were read from connected GitHub records on 2026
 | Stage | Current implementation branch | Remaining gate |
 |---|---|---|
 | 1. Replaceable model-provider adapter | Provider-neutral Responses API and Chat Completions adapters implemented | CI passed in PR #5; secret-manager configuration and authorized staging call remain |
-| 2. Source-aware retrieval | Explicit manifest and local lexical retrieval implemented | Public manifest and citation tests pass; connector adapters and retrieval quality evaluation remain |
+| 2. Source-aware retrieval | Explicit manifest, local lexical retrieval, and read-only GitHub source adapter implemented | Public manifest and GitHub adapter implemented; connector token/configuration, source freshness, and retrieval quality evaluation remain |
 | 3. Controlled memory/provenance | Consent-gated SQLite memory, retention, deletion events implemented | Unit tests pass; privacy review, encrypted host storage, consent UI, restore/delete verification remain |
 | 4. Authenticated Agent 25 communication | HMAC envelope, per-peer key lookup, timestamp/nonce replay guard implemented | Envelope/replay tests pass; peer identity/key provisioning, TLS transport, schema registration, revocation/integration tests remain |
 | 5. Adversarial evaluations | Provider, retrieval, memory, federation and staging tests added | 18 foundation tests pass; expanded red-team corpus and human security review remain |
