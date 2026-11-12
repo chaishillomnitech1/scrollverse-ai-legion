@@ -8,7 +8,8 @@ description: Assess or prepare an isolated AURELLION and Agent 25 staging enviro
 ## Prerequisites
 - Dedicated non-production hosting project and environment.
 - Selected provider, model, HTTPS endpoint, exact provider-host allowlist, and secret-manager credential.
-- Shared TLS-enabled Redis/Upstash rate-limit store.
+- Shared TLS-enabled Redis/Upstash rate-limit store and atomic shared rate limiter (agents/aurellion/runtime/rate_limiter.py).
+- Exact HTTPS origin policy enforced by the visitor backend (agents/aurellion/runtime/origin_policy.py).
 - Exact staging hostname and approved embed-origin allowlist.
 - Trusted proxy hop count verified from the actual ingress path.
 - Agent 25 peer identity and unique peer secret provisioned securely.
