@@ -13,7 +13,7 @@ class SourceManifestTests(unittest.TestCase):
         self.assertTrue(all(hit.sha256 and hit.line_start > 0 for hit in hits))
 
     def test_manifest_does_not_make_project_private_sources_public(self):
-        repository_root = Path(__file__).resolve().parents[2]
+        repository_root = Path(__file__).resolve().parents[3]
         registry = load_registry(repository_root, "agents/aurellion/knowledge/sources.json")
         self.assertEqual(registry.search("private conversations", scopes=("project-private",)), [])
 
