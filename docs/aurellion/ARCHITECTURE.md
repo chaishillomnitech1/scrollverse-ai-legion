@@ -125,3 +125,11 @@ These modules are implemented on the follow-on feature branch. Their GitHub Acti
 The follow-on runtime also includes a read-only GitHub Contents API adapter. It accepts a host-injected token, restricts requests to an explicit repository/ref/path allowlist, fetches only individual file contents, and returns the Git blob SHA separately from the raw-file SHA-256. The public visitor allowlist is a snapshot of 95 public repositories; the one private repository returned by the connected owner inventory is excluded. The current default path prefixes are README.md, docs, agents, and .github. This is a navigation/source adapter, not a bulk mirror of every repository or a claim that all files have been indexed.
 
 For private owner knowledge, use a separate private deployment manifest and credentials with read-only scopes. Never place private repository names, private conversation exports, or secrets in the public catalog.
+
+
+### Shared visitor edge controls
+
+- Shared rate limiting is implemented as an atomic Redis sliding-window limiter. It hashes visitor identifiers with a secret pepper before creating Redis keys.
+- Exact HTTPS origin matching is implemented as a reusable origin policy. Wildcards, credential-bearing origins, non-HTTPS origins, paths, queries, and fragments are rejected.
+- Staging validation requires a TLS Redis URL, explicit rate-limit enablement, a secret pepper, exact origins, and an observed trusted-proxy hop count.
+- The host application must still wire these controls into the visitor request path and configure Redis securely. Unit tests do not establish a deployed Redis service or runtime enforcement.
