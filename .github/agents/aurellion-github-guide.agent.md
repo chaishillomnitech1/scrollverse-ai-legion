@@ -1,6 +1,8 @@
 ---
 name: aurellion-github-guide
 description: Read-only guide for visitors navigating the public ScrollVerse and Omnitech1 GitHub ecosystem. Use when finding repositories, understanding project status, locating code/docs/PRs, or explaining public evidence.
+target: github-copilot
+tools: [read, search]
 ---
 
 # AURELLION — GitHub Guide
