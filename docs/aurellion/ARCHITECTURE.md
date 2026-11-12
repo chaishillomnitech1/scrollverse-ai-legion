@@ -104,3 +104,17 @@ Never bind project identity to one model provider. Provider selection must be co
 ## 6. Evidence states
 
 Use separate labels: DOCUMENTED, IMPLEMENTED, TESTED, VERIFIED, STAGED, DEPLOYED, ACTIVE. A branch commit establishes a repository artifact, not a running AI. A successful CI job establishes only the checks actually run. A preview is not production.
+
+
+## 7. Implemented runtime modules — follow-on foundation
+
+The next implementation branch adds the following provider-neutral primitives:
+
+- Model adapter: configurable OpenAI-compatible endpoint/model, exact hostname allowlist, HTTPS enforcement, bounded request size/temperature/token settings, sanitized errors, and no credential persistence.
+- Source retrieval: explicit source manifest, public/private/session scope labels, local allowlist, path traversal protection, file-size/type restrictions, content hashes, lexical ranking, and line-level citations.
+- Controlled memory: explicit consent for durable writes, ordinary project knowledge only, namespace separation, retention expiry, explicit deletion event, and provenance metadata.
+- Agent 25 federation: canonical HMAC-authenticated envelopes, per-peer key lookup, recipient/type/time/size validation, persistent nonce replay guard, and TLS-required transport boundary.
+- Staging gate: validates required provider, origin, Redis TLS, trusted-proxy and peer configuration without deploying or printing secret values.
+- Adversarial tests: provider allowlist, retrieval scope/path traversal, memory consent/deletion/secret rejection, message authentication/replay/tampering, and staging fail-closed behavior.
+
+These modules are implemented on the follow-on feature branch. Their GitHub Actions result is pending until the pull request workflow completes. No provider credentials, Agent 25 peer key, network endpoint, or hosting environment has been connected.
