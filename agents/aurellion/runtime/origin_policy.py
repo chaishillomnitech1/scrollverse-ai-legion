@@ -12,7 +12,7 @@ class ExactOriginPolicy:
         normalized = set()
         for origin in allowed_origins:
             parsed = urlparse(origin)
-            if parsed.scheme != "https" or not parsed.hostname or parsed.path not in {"", "/"} or parsed.query or parsed.fragment or "*" in origin:
+            if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password or parsed.path not in {"", "/"} or parsed.query or parsed.fragment or "*" in origin:
                 raise ValueError("Origins must be exact HTTPS origins without path, query, fragment, or wildcard.")
             normalized.add(f"https://{parsed.netloc.lower()}")
         self.allowed_origins = normalized
@@ -22,6 +22,6 @@ class ExactOriginPolicy:
             raise OriginDenied("Origin header is required.")
         parsed = urlparse(origin)
         normalized = f"{parsed.scheme}://{parsed.netloc.lower()}"
-        if parsed.scheme != "https" or parsed.path not in {"", "/"} or parsed.query or parsed.fragment or normalized not in self.allowed_origins:
+        if parsed.scheme != "https" or parsed.username or parsed.password or parsed.path not in {"", "/"} or parsed.query or parsed.fragment or normalized not in self.allowed_origins:
             raise OriginDenied("Origin is not approved.")
         return normalized
