@@ -31,7 +31,7 @@ def validate_staging_environment(env: Mapping[str, str] | None = None) -> list[s
         errors.append("AURELLION_ALLOWED_ORIGINS is missing.")
     for origin in origins:
         parsed = urlparse(origin)
-        if parsed.scheme != "https" or not parsed.hostname or parsed.path not in {"", "/"} or parsed.query or parsed.fragment or "*" in origin:
+        if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password or parsed.path not in {"", "/"} or parsed.query or parsed.fragment or "*" in origin:
             errors.append("Every allowed origin must be an exact HTTPS origin without path, query, fragment, or wildcard.")
             break
     redis_url = urlparse(values.get("REDIS_URL", ""))
