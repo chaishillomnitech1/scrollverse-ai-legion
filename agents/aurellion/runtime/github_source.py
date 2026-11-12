@@ -90,3 +90,25 @@ class GitHubReadOnlyAdapter:
             raw_sha256=hashlib.sha256(raw).hexdigest(),
             html_url=str(payload.get("html_url", "")),
         )
+
+
+def load_public_allowlist(manifest_path: str) -> dict[str, dict[str, object]]:
+    """Load only public repository entries from the versioned JSON allowlist."""
+    from pathlib import Path
+    data = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
+    if data.get("schema_version") != 1 or data.get("scope") != "public-only":
+        raise GitHubSourceError("Public GitHub allowlist schema or scope is invalid.")
+    result: dict[str, dict[str, object]] = {}
+    for item in data.get("repositories", []):
+        if item.get("scope") != "public":
+            continue
+        full_name = str(item.get("full_name", ""))
+        branch = str(item.get("default_branch", ""))
+        if full_name.count("/") != 1 or not branch:
+            raise GitHubSourceError("Public allowlist contains an invalid repository entry.")
+        result[full_name] = {
+            "scope": "public",
+            "refs": [branch],
+            "paths": [str(path) for path in item.get("paths", [])],
+        }
+    return result
