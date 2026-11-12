@@ -14,11 +14,18 @@ def validate_staging_environment(env: Mapping[str, str] | None = None) -> list[s
     if not values.get("AURELLION_API_KEY", ""):
         errors.append("AURELLION_API_KEY is missing.")
     endpoint = urlparse(values.get("AURELLION_API_BASE_URL", ""))
+    api_style = values.get("AURELLION_API_STYLE", "responses").strip().lower()
+    if api_style not in {"responses", "chat_completions"}:
+        errors.append("AURELLION_API_STYLE must be responses or chat_completions.")
     hosts = {h.strip().lower() for h in values.get("AURELLION_ALLOWED_PROVIDER_HOSTS", "").split(",") if h.strip()}
     if endpoint.scheme != "https" or not endpoint.hostname or endpoint.username or endpoint.password:
         errors.append("AURELLION_API_BASE_URL must be HTTPS and contain no embedded credentials.")
     elif endpoint.hostname.lower() not in hosts or "*" in hosts:
         errors.append("Provider endpoint host is not in the exact allowlist.")
+    elif api_style == "responses" and endpoint.path.rstrip("/") != "/v1/responses":
+        errors.append("Responses API style requires the /v1/responses endpoint.")
+    elif api_style == "chat_completions" and endpoint.path.rstrip("/") != "/v1/chat/completions":
+        errors.append("Chat Completions style requires the /v1/chat/completions endpoint.")
     origins = [item.strip() for item in values.get("AURELLION_ALLOWED_ORIGINS", "").split(",") if item.strip()]
     if not origins:
         errors.append("AURELLION_ALLOWED_ORIGINS is missing.")
