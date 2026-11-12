@@ -55,6 +55,9 @@ class ProviderConfig:
             raise ProviderConfigurationError("Wildcard hosts are forbidden and timeout must be between 1 and 120 seconds.")
         if self.api_style not in {"responses", "chat_completions"}:
             raise ProviderConfigurationError("AURELLION_API_STYLE must be responses or chat_completions.")
+        expected_path = "/v1/responses" if self.api_style == "responses" else "/v1/chat/completions"
+        if parsed.path.rstrip("/") != expected_path:
+            raise ProviderConfigurationError("Provider endpoint path does not match the configured API style.")
 
 @dataclass(frozen=True)
 class ModelResponse:
