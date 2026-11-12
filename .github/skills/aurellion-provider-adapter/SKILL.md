@@ -5,7 +5,7 @@ description: Build, configure, test, or replace AURELLION model-provider adapter
 
 # AURELLION Provider Adapter
 
-Use the provider-neutral interface in agents/aurellion/runtime/provider.py.
+Use the provider-neutral interface in agents/aurellion/runtime/provider.py. For new OpenAI integrations, default to the Responses API adapter; retain Chat Completions only where an explicitly configured compatible endpoint requires it.
 
 ## Workflow
 1. Inspect the current provider contract and tests before editing.
