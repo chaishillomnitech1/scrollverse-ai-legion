@@ -35,6 +35,10 @@ def validate_staging_environment(env: Mapping[str, str] | None = None) -> list[s
             errors.append("Every allowed origin must be an exact HTTPS origin without path, query, fragment, or wildcard.")
             break
     redis_url = urlparse(values.get("REDIS_URL", ""))
+    if values.get("RATE_LIMIT_ENABLED", "").lower() != "true":
+        errors.append("RATE_LIMIT_ENABLED must be true for staging.")
+    if len(values.get("AURELLION_RATE_LIMIT_PEPPER", "")) < 32:
+        errors.append("AURELLION_RATE_LIMIT_PEPPER must be provisioned in the secret manager.")
     if redis_url.scheme != "rediss" or not redis_url.hostname:
         errors.append("REDIS_URL must use TLS (rediss://) and have a hostname.")
     if values.get("TRUSTED_PROXY_HOPS", "") not in {"1", "2", "3"}:
