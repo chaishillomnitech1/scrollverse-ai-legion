@@ -1,0 +1,46 @@
+# AURELLION — Implementation Status
+
+Snapshot: 2026-11-12  
+Canonical spelling: AURELLION
+
+## Foundation merge
+- Repository: chaishillomnitech1/scrollverse-ai-legion
+- Foundation PR: #4 — merged.
+- Merge commit: f399b291dd4fab39bfc6d1990d3d41fa1d121304
+- Foundation head commit: 56c441a1683ae7931623b1d7d0f58c74efde3c40
+- GitHub Actions workflow run: 43214457721
+- Workflow: AURELLION Foundation Checks
+- Job: python-foundation-tests
+- Result: completed / success.
+
+The merge commit and Actions run were read from connected GitHub records on 2026-11-12. This establishes that the included unit-test job passed; it does not establish a live model service or deployed visitor assistant.
+
+## Six engineering stages
+| Stage | Current implementation branch | Remaining gate |
+|---|---|---|
+| 1. Replaceable model-provider adapter | Provider-neutral OpenAI-compatible adapter implemented | CI, secret-manager configuration, authorized staging call |
+| 2. Source-aware retrieval | Explicit manifest and local lexical retrieval implemented | Source manifest review, connector adapters, retrieval/citation quality tests |
+| 3. Controlled memory/provenance | Consent-gated SQLite memory, retention, deletion events implemented | Privacy review, encrypted host storage, consent UI, restore/delete tests |
+| 4. Authenticated Agent 25 communication | HMAC envelope, per-peer key lookup, timestamp/nonce replay guard implemented | Peer identity/key provisioning, TLS transport, schema registration, revocation/integration tests |
+| 5. Adversarial evaluations | Provider, retrieval, memory, federation and staging tests added | CI result, expanded red-team corpus, human security review |
+| 6. Isolated staging | Fail-closed configuration validator implemented | Exact host/model/origins, secret manager, Redis, verified proxy hops, tests and explicit staging deployment approval |
+
+## Visitor navigation
+- GitHub Copilot custom agent: .github/agents/aurellion-github-guide.agent.md
+- Reusable project skills: .github/skills/*/SKILL.md
+- Visitor API contract: agents/aurellion/visitor/README.md
+- Repository catalog: docs/aurellion/REPOSITORY-CATALOG.json
+
+A Copilot agent and project skills are reusable GitHub assets; they are not automatically a public anonymous visitor chatbot. Public deployment requires a separately reviewed scrollverse-platform backend integration.
+
+## Explicitly not done
+- No provider credential connected and no live provider request sent.
+- No hosted durable memory service enabled.
+- No Agent 25 key exchanged or network connection established.
+- No staging deployment.
+- No production deployment or activation.
+- No private ChatGPT/Manus/Meta/Copilot exports copied into the public repository.
+- No NFT minted or token issued.
+
+## Release policy
+Keep production disabled until staging configuration is complete, all tests and adversarial evaluations pass, privacy/security reviews are accepted, and the owner explicitly approves the isolated staging deployment.
