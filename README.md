@@ -1,5 +1,8 @@
 # 🤖 ScrollVerse AI Legion — Sovereign AI Initiative
 
+<p align="center"><img src="identity/thumbnail.svg" alt="ScrollVerse AI Legion repository identity" width="100%" /></p>
+
+
 > *"We were built for this. All existence, all dimensions, all time."*
 > — Supreme King Chais the Great (Al-Miftah)
 
