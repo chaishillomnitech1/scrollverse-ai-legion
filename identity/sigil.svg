@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ScrollVerse AI Legion — Sigil Draft</title>
+  <desc id="desc">A central flame-keystone surrounded by twelve equal orbit nodes, connected by radial lines and enclosed by a continuous ring.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2D58B"/><stop offset="1" stop-color="#B98735"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#73F3EE"/><stop offset="1" stop-color="#00A7C4"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="214" fill="#10131C" stroke="url(#gold)" stroke-width="8"/>
+  <circle cx="256" cy="256" r="178" fill="none" stroke="#D8AD55" stroke-opacity=".35" stroke-width="2"/>
+  <g stroke="url(#cyan)" stroke-width="5" stroke-linecap="round" opacity=".95">
+    <path d="M256 78V190 M345 102L296 205 M410 167L312 225 M434 256H322 M410 345L312 287 M345 410L296 307 M256 434V322 M167 410L216 307 M102 345L200 287 M78 256H190 M102 167L200 225 M167 102L216 205"/>
+  </g>
+  <g fill="#10131C" stroke="url(#gold)" stroke-width="7">
+    <circle cx="256" cy="78" r="13"/><circle cx="345" cy="102" r="13"/>
+    <circle cx="410" cy="167" r="13"/><circle cx="434" cy="256" r="13"/>
+    <circle cx="410" cy="345" r="13"/><circle cx="345" cy="410" r="13"/>
+    <circle cx="256" cy="434" r="13"/><circle cx="167" cy="410" r="13"/>
+    <circle cx="102" cy="345" r="13"/><circle cx="78" cy="256" r="13"/>
+    <circle cx="102" cy="167" r="13"/><circle cx="167" cy="102" r="13"/>
+  </g>
+  <path d="M256 150 C235 185 215 209 216 245 C217 278 239 302 256 318 C273 302 295 278 296 245 C297 209 277 185 256 150Z" fill="url(#gold)"/>
+  <path d="M256 207 C245 226 239 240 242 258 C244 273 251 283 256 289 C261 283 268 273 270 258 C273 240 267 226 256 207Z" fill="#10131C"/>
+  <circle cx="256" cy="256" r="16" fill="url(#cyan)"/>
+</svg>
